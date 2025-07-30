@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="signup.css">
     <meta charset="utf-8">
+    <title>Sign up | eAuction</title>
+    <link rel="icon" type="image/png" href="../icon.png" />
 </head>
 <html>
     <body>
-        <h1>THIS IS A PLACEHOLDER</h1>
+        <header class="header">
+            <div >
+                <img class="logo" src="../Logo.png" alt="Logo">
+            </div>
+        </header>
+        <div class="body">
+            <div class="wrapper">
+                <form class="signupform" action="">
+                    <h1>Sign Up</h1>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirm-pswd" placeholder="Confirm your password" required>
+                    <input type="text" id="first-name" placeholder="First name" required>
+                    <input type="text" id="middle-name" placeholder="Middle name">
+                    <input type="text" id="last-name" placeholder="Last name" required>
+                    <!--TODO: Add city and autofill based on post code also check if postcode is valid-->
+                    <input type="text" id="address" placeholder="Address" required>
+                    <input type="text" id="postcode" placeholder="Postcode" required>
+                    <input type="text" id="afm" placeholder="ΑΦΜ" required>
+                    <button class="Register" type="submit">Register</button>
+                    <p>Already have an account? <a class="signin" href="signin.html"><strong>Sign In</strong></a></p>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
